@@ -1,0 +1,98 @@
+.header{
+
+	&__top{
+		background-color: #333;
+		position: fixed;
+		z-index: 1000;
+		left: 0;
+		top: 0;
+		right: 0;
+	}
+
+	.header-top{
+
+		&__wrap{
+      display: flex;
+      align-items: center;
+			width: 1280px;
+			height: 35px;
+      margin: 0 auto;
+      transform: scale(0.9);
+		}
+
+		.top{
+			
+			&__location{
+				position: relative;
+				padding: 0 0 0 19px;
+			}
+
+			&__location::before {
+			    content: '';
+			    position: absolute;
+			    top: 49%;
+			    left: -7%;
+			    width: 17px;
+			    height: 21px;
+			    margin-top: -10px;
+				  background:url(../img/header-top/sprite.png) -108px -69px no-repeat;
+			}
+
+			.top-location__link{
+				color: white;
+				text-decoration: none;
+        border-bottom: 1px solid #E9E9E9;
+        letter-spacing: -0.1px;
+        transition: border-bottom 150ms ease-out;
+				
+				&:hover{
+					text-decoration: none;
+          border-bottom: none;
+				}
+			}
+			
+			.nav{
+
+				&__list{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+					list-style: none;
+          margin: 0 2px 0 0;
+          padding: 0 0 0 52px;
+				}
+
+				&__item{
+					margin-right: 5px;
+				}
+
+				&__link:link, &__link:visited{
+					display: block;
+					color: #E9E9E9;
+					text-decoration: none;
+					padding: 10px 8px;
+					line-height: 16px;
+					letter-spacing: -0.2px;
+				}
+
+				&__link:hover{
+					border-bottom: 2.5px solid #0069a6;
+				}
+      }
+      .top-order{
+
+        &_link{
+          color: $b-white;
+          border-bottom: 1px solid $b-white; 
+          cursor: pointer;
+          letter-spacing: -0.2px;
+
+          &:hover{
+            border-bottom: none;
+            transition: border-bottom 150ms ease-out;
+          }
+        }
+      }
+		}
+	}
+}

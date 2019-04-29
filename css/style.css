@@ -7,4 +7,109 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+
+.main-page {
+  margin: 0;
+  padding: 0;
+  font: 16px/1em 'Roboto', sans-serif;
+  min-width: 1280px;
+}
+
+.header__top {
+  background-color: #333;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header .header-top__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1280px;
+  height: 35px;
+  margin: 0 auto;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.header .header-top .top__location {
+  position: relative;
+  padding: 0 0 0 19px;
+}
+
+.header .header-top .top__location::before {
+  content: '';
+  position: absolute;
+  top: 49%;
+  left: -7%;
+  width: 17px;
+  height: 21px;
+  margin-top: -10px;
+  background: url(../img/header-top/sprite.png) -108px -69px no-repeat;
+}
+
+.header .header-top .top .top-location__link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #E9E9E9;
+  letter-spacing: -0.1px;
+  -webkit-transition: border-bottom 150ms ease-out;
+  transition: border-bottom 150ms ease-out;
+}
+
+.header .header-top .top .top-location__link:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.header .header-top .top .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0 2px 0 0;
+  padding: 0 0 0 52px;
+}
+
+.header .header-top .top .nav__item {
+  margin-right: 5px;
+}
+
+.header .header-top .top .nav__link:link, .header .header-top .top .nav__link:visited {
+  display: block;
+  color: #E9E9E9;
+  text-decoration: none;
+  padding: 10px 8px;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+}
+
+.header .header-top .top .nav__link:hover {
+  border-bottom: 2.5px solid #0069a6;
+}
+
+.header .header-top .top .top-order_link {
+  color: #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+  cursor: pointer;
+  letter-spacing: -0.2px;
+}
+
+.header .header-top .top .top-order_link:hover {
+  border-bottom: none;
+  -webkit-transition: border-bottom 150ms ease-out;
+  transition: border-bottom 150ms ease-out;
+}
 /*# sourceMappingURL=style.css.map */
