@@ -51,7 +51,7 @@ html {
   width: 17px;
   height: 21px;
   margin-top: -10px;
-  background: url(../img/header-top/sprite.png) -108px -69px no-repeat;
+  background: url(../img/main-page/sprite.png) -108px -69px no-repeat;
 }
 
 .header .header-top .top .top-location__link {
@@ -68,7 +68,7 @@ html {
   border-bottom: none;
 }
 
-.header .header-top .top .nav__list {
+.header .header-top .top .top-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,11 +83,11 @@ html {
   padding: 0 0 0 52px;
 }
 
-.header .header-top .top .nav__item {
+.header .header-top .top .top-nav__item {
   margin-right: 5px;
 }
 
-.header .header-top .top .nav__link:link, .header .header-top .top .nav__link:visited {
+.header .header-top .top .top-nav__link:link, .header .header-top .top .top-nav__link:visited {
   display: block;
   color: #E9E9E9;
   text-decoration: none;
@@ -96,7 +96,7 @@ html {
   letter-spacing: -0.2px;
 }
 
-.header .header-top .top .nav__link:hover {
+.header .header-top .top .top-nav__link:hover {
   border-bottom: 2.5px solid #0069a6;
 }
 
@@ -111,5 +111,157 @@ html {
   border-bottom: none;
   -webkit-transition: border-bottom 150ms ease-out;
   transition: border-bottom 150ms ease-out;
+}
+
+.header-middle__wrap {
+  width: 1310px;
+  margin: 35px auto;
+  padding: 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.middle__logo {
+  width: 280px;
+  padding: 8px 0;
+  position: relative;
+}
+
+.middle__search {
+  padding: 29px 0 0 40px;
+}
+
+.middle__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 0 0 20px;
+  letter-spacing: -0.2px;
+}
+
+.logo__img {
+  width: 100%;
+}
+
+.logo__text {
+  width: 200px;
+  font: 12px/1.25em 'Roboto';
+  letter-spacing: -0.2px;
+  position: absolute;
+  top: 50px;
+  left: 82px;
+}
+
+.search__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search__field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 350px;
+  height: 52px;
+  padding-left: 16px;
+  border: 2px solid #0069a6;
+  border-right: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.search__button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 115px;
+  height: 52px;
+  padding: 14px 20px;
+  border: 2px solid #0069a6;
+  background: #0069a6;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  background: #00537D;
+}
+
+.contact__box {
+  padding: 13px 0 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-box__text--main {
+  font: 300 13px/1em 'Roboto';
+  color: #333;
+  padding-left: 53px;
+  margin: 5px 0 4px 0;
+}
+
+.contact-box__text {
+  font: lighter 13px/1em 'Roboto';
+  color: #333;
+  padding-left: 43px;
+  margin: 5px -3px 3px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-box__link {
+  text-decoration: none;
+  font: bold 20px/1em 'Roboto';
+  color: #474747;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-box__link--main::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  width: 18px;
+  height: 23px;
+  margin-top: -13px;
+  background: url(../img/main-page/sprite.png) -108px -36px no-repeat;
+}
+
+.contact-box__link--main {
+  font: bold 26px/1em 'Roboto';
+  letter-spacing: 0;
+  position: relative;
+}
+
+.contact-box__link--email {
+  font: 17px/1em  'Roboto';
+  text-decoration: underline;
+  padding: 3px 0 0 0;
+  letter-spacing: 1.1px;
+}
+
+.contact-box__text--wrap {
+  padding: 35px 0 0 0;
+  font: 15px/1em 'Roboto';
+  font-weight: 300;
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */

@@ -35,7 +35,7 @@
 			    width: 17px;
 			    height: 21px;
 			    margin-top: -10px;
-				  background:url(../img/header-top/sprite.png) -108px -69px no-repeat;
+				  background:url(../img/main-page/sprite.png) -108px -69px no-repeat;
 			}
 
 			.top-location__link{
@@ -51,7 +51,7 @@
 				}
 			}
 			
-			.nav{
+			.top-nav{
 
 				&__list{
           display: flex;
@@ -78,7 +78,8 @@
 				&__link:hover{
 					border-bottom: 2.5px solid #0069a6;
 				}
-      }
+			}
+			
       .top-order{
 
         &_link{
