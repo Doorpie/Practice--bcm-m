@@ -24,14 +24,14 @@
 			
 			&__location{
 				position: relative;
-				padding: 0 0 0 19px;
+				padding: 0 0 0 28px;
 			}
 
 			&__location::before {
 			    content: '';
 			    position: absolute;
 			    top: 49%;
-			    left: -7%;
+			    left: 0;
 			    width: 17px;
 			    height: 21px;
 			    margin-top: -10px;

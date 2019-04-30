@@ -2,7 +2,7 @@
 		
   &__wrap{
     width: 1310px;
-    margin: 35px auto;
+    margin: 35px auto 0 auto;
     padding: 0 6px;
     display: flex;
     transform: scale(0.9);
@@ -12,8 +12,8 @@
 .middle{
 
   &__logo{
-    width: 280px;
-    padding: 8px 0;
+    width: 290px;
+    padding: 8px 0 0 9px;
     position: relative;
   }
 
@@ -36,11 +36,11 @@
 
   &__text{
     width: 200px;
-    font:12px/1.25em 'Roboto';
+    font: 12px/1.25em 'Roboto';
     letter-spacing: -0.2px;
     position: absolute;
-    top:50px;
-    left:82px;      
+    top: 50px;
+    left: 91px;      
   }
 }
 

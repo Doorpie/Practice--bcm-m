@@ -1,0 +1,104 @@
+.main{
+
+
+	&__aside{
+		width: 355px;
+		max-height: 1115px;
+        border-right: 2px solid $b-gray;
+        transform: scale(0.9);
+	}
+
+	.aside{
+
+
+		&__list{
+			position: relative;
+            list-style: none;
+            margin: -31px 0 0 8px;
+			padding-left: 64px;
+			
+		}
+
+		&__link--main{
+			display: block;
+			font: bold 26px/1em 'Roboto';
+			letter-spacing: 0.7px;
+			text-decoration: none;
+			color:#333;
+			padding: 10px 0 0 10px;
+            margin: 0 0 -6px 0;
+            
+            &::before{
+                content: '';
+                background-image: url(/img/aside/lg.png);
+                position: absolute;
+                width: 22px;
+                height: 20px;
+                top: 12px;
+                left: 45px;
+            }
+
+            &:hover{
+                color: $b-blue;
+            }
+		}
+
+		&__link{
+			text-decoration: none;
+			color:#333;
+			font: bold 19px/1.1em 'Roboto';
+			letter-spacing: -0.4px;
+            position: relative;
+            
+            &:hover{
+                color: $b-blue;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 10px;
+                margin-top: -5px;
+                background-image: url(/img/main-page/sprite.png);
+                background-position: -100px -101px;
+                background-repeat: no-repeat;
+                top: 11px;
+                left: -14px;
+            }
+		}
+
+		&__item{
+			padding-bottom: 28px;
+			padding-right: 45px;
+		}
+
+		&__manager{
+			background: $b-gray;
+			margin: 50px 0 0 64px;
+			padding: 38px 0;
+            text-align: center;
+		}
+
+		.manager{
+
+			&__img{
+				border-radius: 50%;
+				border: 2px solid $b-blue;
+                width: 128px; 
+			}
+
+			&__name{
+				color: #333;
+				font: 16px/1em 'Roboto';
+				margin-bottom: 5px;
+			}
+
+			&__information{
+				margin: 0 0 9px 0;
+				font-weight: 300;
+				letter-spacing: 0.2px;
+			}
+		}
+    }
+}
