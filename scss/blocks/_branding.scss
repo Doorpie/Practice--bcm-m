@@ -1,0 +1,143 @@
+.content{
+
+
+    &__branding{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        transform: scale(0.9);
+        margin-left: -17px;
+    }
+
+    .branding{
+
+        &__box{
+            width: 625px;
+            height: 343px;
+            position: relative;
+            background: url(/img/branding/branding-welcome.jpg) no-repeat;
+        }	
+
+        &__title{
+            font: 32px/1.2em 'Roboto';
+            color: #333333;
+            text-align: left;
+            padding: 45px 55px; 
+        }
+
+        &__item{
+            color: #333;
+            font: 300 18px/1.2em 'Roboto';
+            padding: 24px 115px 6px;
+        }
+        
+        &__item:nth-child(2)::before{
+            content: '';
+            position: absolute;
+            background: url(/img/main-page/sprite.png) no-repeat -108px 0;
+            width: 41px;
+            height: 32px;
+            top: 143px;
+            left: 55px;
+        }
+
+        &__item:nth-child(3)::before{
+            content: '';
+            position: absolute;
+            background: url(/img/main-page/sprite.png) no-repeat -58px 0;
+            width: 41px;
+            height: 32px;
+            top: 191px;
+            left: 55px;
+        }
+
+        &__item:nth-child(4)::before{
+            content: '';
+            position: absolute;
+            background: url(/img/main-page/sprite.png) no-repeat 0 -50px;
+            width: 41px;
+            height: 42px;
+            top: 248px;
+            left: 55px;
+        }
+
+        &__form{
+            width: 311px;
+            height: 335px;
+            border: 2px solid $b-blue;
+            margin-right: 33px;
+            text-align: left;
+        }
+    }
+    
+    .branding-form{
+
+        &__title{
+            font: 500 17px/1.3em 'Roboto';
+            padding: 10px 20.5px;
+        }
+
+        &__field{
+            box-sizing: border-box;
+            width: 271px;
+            height: 40px;
+            padding: 8px 15px 9px;
+            margin: 5px 20px 4px;
+            border: 2px solid #f2f2f2;
+            font-size: 16px;
+            color: #666;
+        }
+
+        &__field--comment{
+            height: 42px;
+            margin-bottom: 8px;
+        }
+            
+        &__loading-link{
+            color: $b-blue;
+            border-bottom: 1px solid $b-blue;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+         &__loading-file{
+             display: none;
+         }
+
+         &__button{
+             width: 271px;
+             margin: 10px 20px;
+            padding: 11px;
+            font: 16px/1em 'Roboto';
+            letter-spacing: -0.2px;
+            background: $b-blue;
+            color:#fff;
+            border: none;
+         }
+
+         &__button:hover{
+            background: $b-d_blue;
+            cursor: pointer;
+        }
+            
+        &__sub-text{
+            font: 11.2px/1.2em 'Roboto';
+            letter-spacing: -0.1px;
+            color: #333;
+            margin: 0 20px;
+        }	
+
+        &__link{
+            color: $b_blue;
+        }
+
+        &__link:hover{
+            text-decoration: none;
+        }
+    }
+
+    &__categorys{
+        transform: scale(0.9);
+        margin-left: -18px;     
+    }
+}

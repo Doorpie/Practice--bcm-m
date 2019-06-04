@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <title>bcm-m</title>
 </head>
 
 <body class="main-page">
+    <!-- header -->
     <header class="header">
         <div class="header-top header__top">
             <div class="top header-top__wrap">
@@ -50,22 +51,25 @@
                 <div class="contact middle__contact">
                     <div class="contact-box contact__box">
                         <p class="contact-box__text--main">Звонок по России бесплатный</p>
-                        <a href="#" class="contact-box__link contact-box__link--main">8 (560) 378-04-66</a>
+                        <a href="tel:85603780466" class="contact-box__link contact-box__link--main">8 (560) 378-04-66</a>
                         <p class="contact-box__text contact-box__text--wrap">Почта для заявок:</p>
                         <a href="#" class="contact-box__link contact-box__link--email">info@bcm.com</a>
                     </div>
                     <div class="contact-box contact__box contact__box--right">
                         <p class="contact-box__text">Новосибирск</p>
-                        <a href="#" class="contact-box__link">8 (383) 278-45-59</a>
+                        <a href="tel:83832784559" class="contact-box__link">8 (383) 278-45-59</a>
                         <p class="contact-box__text">Москва</p>
-                        <a href="#" class="contact-box__link">8 (459) 367-92-67</a>
+                        <a href="tel:84593679267" class="contact-box__link">8 (459) 367-92-67</a>
                         <p class="contact-box__text">Екатеринбург</p>
-                        <a href="#" class="contact-box__link">8 (345) 300-94-43</a>
+                        <a href="tel:83453009443" class="contact-box__link">8 (345) 300-94-43</a>
                     </div>
                 </div>
             </div>
     </header>
+    <!-- /header -->
+    <!-- main -->
     <main class="main">
+        <!-- aside -->
         <aside class="aside main__aside">
             <ul class="aside__list">
                 <li class="aside__item"><a href="#" class="aside__link--main ">Каталог</a></li>
@@ -91,7 +95,34 @@
                 <p class="manager__information">zakaz@bcm.com</p>
             </div>
         </aside>
+        <!-- /aside -->
+        <!-- content -->
+        <section class="content main__content">
+            <section class="branding content__branding">
+                <div class="branding__box">
+                    <div class="branding__title">Производство металлопродукции с доставкой по России и СНГ</div>
+                    <div class="branding__item">Отгрузка в день оплаты заказа</div>
+                    <div class="branding__item">Услуги резки, гибки и обработки металла</div>
+                    <div class="branding__item">Производим изделия из металла под заказ по чертежам</div>	
+                </div>
+                <div class="branding-form branding__form">
+                    <div class="branding-form__title">Отправьте заявку на расчет и получите счет на оплату</div>
+                    <form action="" >
+                        <input type="text" placeholder="Телефон" class="branding-form__field">
+                        <input type="text" placeholder="Ваш e-mail" class="branding-form__field">
+                        <textarea name="" placeholder="Ваш комментарий" class="branding-form__field branding-form__field--comment"></textarea>
+                        <label for="branding-form__loading" class="branding-form__loading-link">Загрузка файла</label>
+                        <input type="file" id="branding-form__loading" class="branding-form__loading-file">
+                        <br>
+                        <input type="submit" value="Отправить запрос" class="branding-form__button">
+                        <p class="branding-form__sub-text">Нажимая кнопку «Отправить» я подтвержаю, что принимаю условия <a href="#" class="branding-form__link">политики конфиденциальности</a></p>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <!-- /content -->
     </main>
+    <!-- /main -->
 </body>
 
 </html>

@@ -18,4 +18,11 @@ html {
     display: flex;
     width: 1280px;
     margin: 0 auto;
+
+    &__content{
+      width: 100%;
+      margin: 19px 0 0 44px;
+    }
   } 
+
+  

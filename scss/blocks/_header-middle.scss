@@ -1,144 +1,144 @@
 .header-middle{
 		
-  &__wrap{
-    width: 1310px;
-    margin: 35px auto 0 auto;
-    padding: 0 6px;
-    display: flex;
-    transform: scale(0.9);
-  }
-}
-
-.middle{
-
-  &__logo{
-    width: 290px;
-    padding: 8px 0 0 9px;
-    position: relative;
-  }
-
-  &__search{
-    padding: 29px 0 0 40px;
-  }
-
-  &__contact{
-    display: flex;
-    padding: 8px 0 0 20px;
-    letter-spacing: -0.2px;
-  }
-}
-
-.logo{
-        
-  &__img{
-    width: 100%;
-  }
-
-  &__text{
-    width: 200px;
-    font: 12px/1.25em 'Roboto';
-    letter-spacing: -0.2px;
-    position: absolute;
-    top: 50px;
-    left: 91px;      
-  }
-}
-
-.search{
-
-  &__form{
-    display: flex;
-  }
-
-  &__field{
-    box-sizing: border-box;
-    width: 350px;
-    height: 52px;
-    padding-left: 16px;
-    border: 2px solid $b-blue;
-    border-right: none;
-    font-size: 16px;
-    color: #333;
-  }
-
-  &__button{
-    box-sizing: border-box;
-    width: 115px;
-    height: 52px;
-    padding: 14px 20px;
-    border: 2px solid $b-blue;
-    background: $b-blue;
-    font-size: 19px;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
-
-    &:hover{
-      background:  $b_d-blue;
+    &__wrap{
+      width: 1310px;
+      margin: 35px auto 0 auto;
+      padding: 0 6px;
+      display: flex;
+      transform: scale(0.9);
     }
   }
-}
-
-.contact__box{
-  padding: 13px 0 0 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-box{
-
-  &__text--main{
-    font: 300 13px/1em 'Roboto';
-    color: #333;
-    padding-left: 53px;
-    margin: 5px 0 4px 0;
+  
+  .middle{
+  
+    &__logo{
+      width: 290px;
+      padding: 8px 0 0 9px;
+      position: relative;
+    }
+  
+    &__search{
+      padding: 29px 0 0 40px;
+    }
+  
+    &__contact{
+      display: flex;
+      padding: 8px 0 0 20px;
+      letter-spacing: -0.2px;
+    }
   }
-
-  &__text{
-    font: lighter 13px/1em 'Roboto';
-    color: #333;
-    padding-left: 43px;
-    margin: 5px -3px 3px 0;
+  
+  .logo{
+          
+    &__img{
+      width: 100%;
+    }
+  
+    &__text{
+      width: 200px;
+      font: 12px/1.25em 'Roboto';
+      letter-spacing: -0.2px;
+      position: absolute;
+      top: 50px;
+      left: 91px;      
+    }
+  }
+  
+  .search{
+  
+    &__form{
+      display: flex;
+    }
+  
+    &__field{
+      box-sizing: border-box;
+      width: 350px;
+      height: 52px;
+      padding-left: 16px;
+      border: 2px solid $b-blue;
+      border-right: none;
+      font-size: 16px;
+      color: #333;
+    }
+  
+    &__button{
+      box-sizing: border-box;
+      width: 115px;
+      height: 52px;
+      padding: 14px 20px;
+      border: 2px solid $b-blue;
+      background: $b-blue;
+      font-size: 19px;
+      font-weight: 700;
+      color: #fff;
+      cursor: pointer;
+  
+      &:hover{
+        background:  $b_d-blue;
+      }
+    }
+  }
+  
+  .contact__box{
+    padding: 13px 0 0 40px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
   }
-
-  &__link{
-    text-decoration: none;
-    font: bold 20px/1em 'Roboto';
-    color:#474747;
-    display: flex;
-    justify-content: flex-end;
+  
+  .contact-box{
+  
+    &__text--main{
+      font: 300 13px/1em 'Roboto';
+      color: #333;
+      padding-left: 53px;
+      margin: 5px 0 4px 0;
+    }
+  
+    &__text{
+      font: lighter 13px/1em 'Roboto';
+      color: #333;
+      padding-left: 43px;
+      margin: 5px -3px 3px 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    &__link{
+      text-decoration: none;
+      font: bold 20px/1em 'Roboto';
+      color:#474747;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    &__link--main::before{
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: -10px;
+      width: 18px;
+      height: 23px;
+      margin-top: -13px;
+      background: url(../img/main-page/sprite.png) -108px -36px no-repeat;
+    }
+  
+    &__link--main{
+      font: bold 26px/1em 'Roboto';
+      letter-spacing: 0;
+      position: relative;
+    } 
+  
+    &__link--email{
+      font: 17px/1em  'Roboto';
+      text-decoration: underline;
+      padding: 3px 0 0 0;
+      letter-spacing: 1.1px;
+    }
+  
+    &__text--wrap{
+      padding: 35px 0 0 0;
+      font: 15px/1em 'Roboto';
+      font-weight: 300;
+      color: #333;
+    }
   }
-
-  &__link--main::before{
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: -10px;
-    width: 18px;
-    height: 23px;
-    margin-top: -13px;
-    background: url(../img/main-page/sprite.png) -108px -36px no-repeat;
-  }
-
-  &__link--main{
-    font: bold 26px/1em 'Roboto';
-    letter-spacing: 0;
-    position: relative;
-  } 
-
-  &__link--email{
-    font: 17px/1em  'Roboto';
-    text-decoration: underline;
-    padding: 3px 0 0 0;
-    letter-spacing: 1.1px;
-  }
-
-  &__text--wrap{
-    padding: 35px 0 0 0;
-    font: 15px/1em 'Roboto';
-    font-weight: 300;
-    color: #333;
-  }
-}
