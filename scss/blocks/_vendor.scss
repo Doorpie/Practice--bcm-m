@@ -1,0 +1,102 @@
+.content__vendor{
+    display: flex;
+    transform: scale(0.9);
+    margin-left: -18px;
+    margin-bottom: 13px;
+}
+
+.vendor{
+
+    &__box{
+        width: 63.5%;
+        background: #F5F5F5;
+        padding-bottom: 60px;
+    }
+
+    &__title{
+        font: 32px/1.1em 'Roboto';
+        padding: 31px;
+    }
+
+    &__list{
+        background: #fff;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__logo{
+        padding: 20px 40px;
+    }
+}
+
+.vendor__form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 33%;
+    border: 2px solid #F5F5F5;
+    border-left: 0;
+}
+
+.vendor-form{
+
+    &__title{
+        padding: 10px 20px;
+        font: 500 16px/1.1em 'Roboto';
+    }
+
+    &__field{
+        box-sizing: border-box;
+        width: 285px;
+        height: 40px;
+        padding: 8px 15px 9px;
+        margin: 5px 20px 4px;
+        border: 2px solid #f2f2f2;
+        font-size: 16px;
+        color: #666;
+    }
+    
+
+     &__button{
+         width: 285px;
+         margin: 5px 20px;
+        padding: 11px;
+        font: 16px/1em 'Roboto';
+        letter-spacing: -0.2px;
+        background: $b-blue;
+        color:#fff;
+        border: none;
+     }
+
+     &__button:hover{
+        background: $b-d_blue;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &__button--sub{
+         background: #fff;
+         border: 2px solid $b_blue;
+         color: $b_blue;
+     }
+
+     &__button--sub:hover{
+         background:  $b_blue;
+         color: #fff;
+     }
+    
+    &__sub-text{
+        font: 11.2px/1.2em 'Roboto';
+        letter-spacing: -0.1px;
+        color: #333;
+        margin: 0 20px;
+    }	
+
+    &__link{
+        color: $b_blue;
+    }
+
+    &__link:hover{
+        text-decoration: none;
+    }
+}

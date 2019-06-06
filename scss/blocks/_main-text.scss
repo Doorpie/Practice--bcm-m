@@ -1,0 +1,24 @@
+
+.content__main-text{
+		margin-left: -18px;
+		padding: 0 31px 0 1px;
+		color: #333;
+		transform: scale(0.9);
+	}
+
+.main-text{
+
+    &__title{
+        margin: 0;
+        font: 32px/1.1em 'Roboto';
+    }
+
+    &__text{
+        font: 16px/1.5em 'Roboto';
+        text-align: justify;
+    }
+
+    &__title{
+        font: 22px/1.3em 'Roboto';
+    }
+}

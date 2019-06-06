@@ -1,0 +1,56 @@
+.content__map{
+    transform: scale(0.9);
+    margin-left: -18px;
+    margin-bottom: 47px;
+}
+
+.map{
+
+    &__title{
+        font: 32px/1em 'Roboto';
+        color: #333;
+        padding-bottom: 15px;
+    }
+
+    &__subtitle{
+        font: 22px/1em 'Roboto';
+        color: #333;
+    }
+
+    &__img{
+        text-align: center;
+    }
+
+    &__action{
+        text-align: center;
+    }
+
+    &__button{
+         width: 292px;
+         margin: 5px 10px 20px 5px;
+        padding: 11px;
+        border: 2px solid $b_blue;
+        font: 16px/1em 'Roboto';
+        letter-spacing: -0.2px;
+        background: $b-blue;
+        color: #fff;	
+     }
+
+     &__button:hover{
+        background: $b-d_blue;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &__button--sub{
+        width: 223px;
+        background: #fff;
+        color: $b_blue;
+    }
+
+    &__button--sub:hover{
+        background: $b_blue;
+        color: #fff;
+    }
+}
+

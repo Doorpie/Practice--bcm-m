@@ -1,0 +1,41 @@
+.content__realized-projects{
+    margin: 0 0 23px -18px;
+    transform: scale(0.9);
+    position: relative;
+
+    .realized-projects{
+
+        &__title{
+            font: 32px/1em 'Roboto';
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        &__subtitle{
+            position: absolute;
+            font: 24px/1em 'Roboto';
+            color: #333;
+            top: 20px;
+            left: 60px;
+        }
+
+        &__slider{
+            position: relative;
+            width: 955px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: linear-gradient(to right, #fff 40%, rgba(255,255,255,0));
+            }
+        }
+
+        &__slider-img{
+            padding-left: 40%;
+        }
+    }
+}

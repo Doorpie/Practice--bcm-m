@@ -1,15 +1,13 @@
 .main{
 
-
 	&__aside{
-		width: 355px;
+		width: 455px;
 		max-height: 1115px;
         border-right: 2px solid $b-gray;
-        transform: scale(0.9);
+		transform: scale(0.9);
 	}
 
 	.aside{
-
 
 		&__list{
 			position: relative;
@@ -70,7 +68,7 @@
 
 		&__item{
 			padding-bottom: 28px;
-			padding-right: 45px;
+			// padding-right: 15px;
 		}
 
 		&__manager{

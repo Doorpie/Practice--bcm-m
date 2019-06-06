@@ -1,0 +1,41 @@
+.content__categorys{
+    transform: scale(0.9);
+    margin-left: -18px;   
+}
+
+.categorys{
+
+    &__title{
+        margin: -1px 1px 27px;
+        font: 32px/1em 'Roboto';
+        color: #333;
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__box{
+        width: 21%;
+        margin: 0 31px 22px 0;
+        text-align: center;
+    }
+
+    &__img{
+        border-radius: 50%;
+    }
+
+    &__links{
+        display: block;
+        margin: 5px;
+        font: 18px/1.4em 'Roboto';
+        text-decoration: none;
+        color: #333;
+    }
+
+    &__links:hover{
+        color: $b_blue;
+    }
+}
