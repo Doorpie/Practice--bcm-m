@@ -391,7 +391,7 @@ html {
   height: 343px;
   margin-right: 20px;
   position: relative;
-  background: url(/img/branding/branding-welcome.jpg) no-repeat;
+  background: url(../img/branding/branding-welcome.jpg) no-repeat;
 }
 
 .content .branding__title {
