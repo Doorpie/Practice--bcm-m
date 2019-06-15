@@ -34,7 +34,7 @@
         &__item:nth-child(2)::before{
             content: '';
             position: absolute;
-            background: url(/img/main-page/sprite.png) no-repeat -108px 0;
+            background: url(../img/main-page/sprite.png) no-repeat -108px 0;
             width: 41px;
             height: 32px;
             top: 143px;
@@ -44,7 +44,7 @@
         &__item:nth-child(3)::before{
             content: '';
             position: absolute;
-            background: url(/img/main-page/sprite.png) no-repeat -58px 0;
+            background: url(../img/main-page/sprite.png) no-repeat -58px 0;
             width: 41px;
             height: 32px;
             top: 191px;
@@ -54,7 +54,7 @@
         &__item:nth-child(4)::before{
             content: '';
             position: absolute;
-            background: url(/img/main-page/sprite.png) no-repeat 0 -50px;
+            background: url(../img/main-page/sprite.png) no-repeat 0 -50px;
             width: 41px;
             height: 42px;
             top: 248px;

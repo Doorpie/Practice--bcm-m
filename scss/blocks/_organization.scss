@@ -12,16 +12,22 @@
         padding: 0 35px 0 0;
     }
 
-    &__item{
+    &__item-office{
         border: 2px solid #e8e8e8;
-        
     }
 
-    &__item:nth-child(2){
-        border-left: none;	
+    &__item-warehouse{
+        border: 2px solid #e8e8e8;
+        border-left: none;	 
     }
 
-    &__link{
+    &__item--active{
+        box-shadow: inset 0 -4px #0069a6;
+        color: #0069a6;
+        cursor: default;
+    } 
+
+    &__link-office,  &__link-warehouse{
         display: block;
         padding: 10px 187px;
         text-decoration: none;
@@ -30,23 +36,100 @@
         color: #333;
     }
     
-    &__slider{
+    &__office,  &__warehouse{
         position: relative;
         width: 955px;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+
+        &--active{
+            width: 955px;
+            opacity: 1;
+            height: auto;
+            overflow: auto;
+            visibility: visible;
+        }
     }
 
-    &__slider::before {
+    &__prev{
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 15px;
+        width: 15px;
+        height: 25px;
+        background: url(../img/main-page/sprite.png) no-repeat -75px -101px;
+        margin-top: -12px;
+        text-indent: -9999px;
+
+        &:hover{
+            background-position: 0 -101px;
+        }
+    }
+
+    &__next{
+        cursor: pointer;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        right: 15px;
+        width: 15px;
+        height: 25px;
+        background-image: url(../img/main-page/sprite.png);
+        background-repeat: no-repeat;
+        background-position: -25px -101px;
+        margin-top: -12px;
+        text-indent: -9999px;
+
+        &:hover{
+            background-position: -50px -101px;
+        }
+    }
+
+    &__office::before,  &__warehouse::before {
         content: '';
         position: absolute;
         top: 0;
-        left: 0;
+        left: -5px;
         bottom: 0;
         width: 100%;
         background: linear-gradient(to right, #fff 40%, rgba(255,255,255,0));
+        z-index: 1;
       }
     
     &__slider-img{
         border: 1px solid #e8e8e8;
         width: 100%;
+    }
+
+    &__warehouse-text{
+        position: absolute;
+        z-index: 1;
+        top: 25%;
+        left: 2%;
+        visibility: hidden;
+
+        &--active{
+            visibility: visible;
+        }
+    }
+
+    &__warehouse-name{
+        font: 600 24px/1em Roboto;
+        color: #333333;
+    }
+
+    &__warehouse-list{
+        color: #666666;
+    }
+
+    &__warehouse-item{
+        font: 400 18px/1.2em Roboto;
+        color: #333333;
+        margin-bottom: 11px;
+        margin-left: 25px;
     }
 }

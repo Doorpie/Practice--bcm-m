@@ -28,7 +28,7 @@
             
             &::before{
                 content: '';
-                background-image: url(/img/aside/lg.png);
+                background-image: url(../img/aside/lg.png);
                 position: absolute;
                 width: 22px;
                 height: 20px;
@@ -58,7 +58,7 @@
                 width: 6px;
                 height: 10px;
                 margin-top: -5px;
-                background-image: url(/img/main-page/sprite.png);
+                background-image: url(../img/main-page/sprite.png);
                 background-position: -100px -101px;
                 background-repeat: no-repeat;
                 top: 11px;

@@ -306,7 +306,7 @@ html {
 
 .main .aside__link--main::before {
   content: '';
-  background-image: url(/img/aside/lg.png);
+  background-image: url(../img/aside/lg.png);
   position: absolute;
   width: 22px;
   height: 20px;
@@ -336,7 +336,7 @@ html {
   width: 6px;
   height: 10px;
   margin-top: -5px;
-  background-image: url(/img/main-page/sprite.png);
+  background-image: url(../img/main-page/sprite.png);
   background-position: -100px -101px;
   background-repeat: no-repeat;
   top: 11px;
@@ -410,7 +410,7 @@ html {
 .content .branding__item:nth-child(2)::before {
   content: '';
   position: absolute;
-  background: url(/img/main-page/sprite.png) no-repeat -108px 0;
+  background: url(../img/main-page/sprite.png) no-repeat -108px 0;
   width: 41px;
   height: 32px;
   top: 143px;
@@ -420,7 +420,7 @@ html {
 .content .branding__item:nth-child(3)::before {
   content: '';
   position: absolute;
-  background: url(/img/main-page/sprite.png) no-repeat -58px 0;
+  background: url(../img/main-page/sprite.png) no-repeat -58px 0;
   width: 41px;
   height: 32px;
   top: 191px;
@@ -430,7 +430,7 @@ html {
 .content .branding__item:nth-child(4)::before {
   content: '';
   position: absolute;
-  background: url(/img/main-page/sprite.png) no-repeat 0 -50px;
+  background: url(../img/main-page/sprite.png) no-repeat 0 -50px;
   width: 41px;
   height: 42px;
   top: 248px;
@@ -549,6 +549,10 @@ html {
   border-radius: 50%;
 }
 
+.categorys__item:hover + .categorys__links {
+  color: #0069a6;
+}
+
 .categorys__links {
   display: block;
   margin: 5px;
@@ -617,7 +621,7 @@ html {
 
 .advantages__item:nth-child(1)::before {
   content: '';
-  background-image: url(/img/advantages/features1.png);
+  background-image: url(../img/advantages/features1.png);
   position: absolute;
   width: 87px;
   height: 73px;
@@ -627,7 +631,7 @@ html {
 
 .advantages__item:nth-child(2)::before {
   content: '';
-  background-image: url(/img/advantages/features2.png);
+  background-image: url(../img/advantages/features2.png);
   position: absolute;
   width: 86px;
   height: 87px;
@@ -637,7 +641,7 @@ html {
 
 .advantages__item:nth-child(3)::before {
   content: '';
-  background-image: url(/img/advantages/features3.png);
+  background-image: url(../img/advantages/features3.png);
   position: absolute;
   width: 73px;
   height: 73px;
@@ -647,7 +651,7 @@ html {
 
 .advantages__item:nth-child(4)::before {
   content: '';
-  background-image: url(/img/advantages/features4.png);
+  background-image: url(../img/advantages/features4.png);
   position: absolute;
   width: 75px;
   height: 96px;
@@ -676,15 +680,23 @@ html {
   padding: 0 35px 0 0;
 }
 
-.organization__item {
+.organization__item-office {
   border: 2px solid #e8e8e8;
 }
 
-.organization__item:nth-child(2) {
+.organization__item-warehouse {
+  border: 2px solid #e8e8e8;
   border-left: none;
 }
 
-.organization__link {
+.organization__item--active {
+  -webkit-box-shadow: inset 0 -4px #0069a6;
+          box-shadow: inset 0 -4px #0069a6;
+  color: #0069a6;
+  cursor: default;
+}
+
+.organization__link-office, .organization__link-warehouse {
   display: block;
   padding: 10px 187px;
   text-decoration: none;
@@ -693,25 +705,102 @@ html {
   color: #333;
 }
 
-.organization__slider {
+.organization__office, .organization__warehouse {
   position: relative;
   width: 955px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
-.organization__slider::before {
+.organization__office--active, .organization__warehouse--active {
+  width: 955px;
+  opacity: 1;
+  height: auto;
+  overflow: auto;
+  visibility: visible;
+}
+
+.organization__prev {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 15px;
+  width: 15px;
+  height: 25px;
+  background: url(../img/main-page/sprite.png) no-repeat -75px -101px;
+  margin-top: -12px;
+  text-indent: -9999px;
+}
+
+.organization__prev:hover {
+  background-position: 0 -101px;
+}
+
+.organization__next {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  right: 15px;
+  width: 15px;
+  height: 25px;
+  background-image: url(../img/main-page/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -25px -101px;
+  margin-top: -12px;
+  text-indent: -9999px;
+}
+
+.organization__next:hover {
+  background-position: -50px -101px;
+}
+
+.organization__office::before, .organization__warehouse::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -5px;
   bottom: 0;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #fff), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0));
+  z-index: 1;
 }
 
 .organization__slider-img {
   border: 1px solid #e8e8e8;
   width: 100%;
+}
+
+.organization__warehouse-text {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 2%;
+  visibility: hidden;
+}
+
+.organization__warehouse-text--active {
+  visibility: visible;
+}
+
+.organization__warehouse-name {
+  font: 600 24px/1em Roboto;
+  color: #333333;
+}
+
+.organization__warehouse-list {
+  color: #666666;
+}
+
+.organization__warehouse-item {
+  font: 400 18px/1.2em Roboto;
+  color: #333333;
+  margin-bottom: 11px;
+  margin-left: 25px;
 }
 
 .content__realized-projects {
@@ -721,38 +810,78 @@ html {
   position: relative;
 }
 
-.content__realized-projects .realized-projects__title {
+.realized-projects__title {
   font: 32px/1em 'Roboto';
   color: #333;
   margin-bottom: 20px;
 }
 
-.content__realized-projects .realized-projects__subtitle {
-  position: absolute;
-  font: 24px/1em 'Roboto';
-  color: #333;
-  top: 20px;
-  left: 60px;
-}
-
-.content__realized-projects .realized-projects__slider {
-  position: relative;
+.realized-projects__slider {
   width: 955px;
 }
 
-.content__realized-projects .realized-projects__slider::before {
+.realized-projects__slider-item {
+  position: relative;
+  height: 390px;
+}
+
+.realized-projects__slider-item::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -6px;
   bottom: 0;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #fff), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0));
 }
 
-.content__realized-projects .realized-projects__slider-img {
-  padding-left: 40%;
+.realized-projects__subtitle {
+  position: absolute;
+  font: 24px/1em 'Roboto';
+  top: 20px;
+  left: 60px;
+  z-index: 1;
+}
+
+.realized-projects__slider-img {
+  float: right;
+}
+
+.realized-projects__prev {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 15px;
+  width: 15px;
+  height: 25px;
+  background: url(../img/main-page/sprite.png) no-repeat -75px -101px;
+  margin-top: -12px;
+  text-indent: -9999px;
+}
+
+.realized-projects__prev:hover {
+  background-position: 0 -101px;
+}
+
+.realized-projects__next {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  right: 15px;
+  width: 15px;
+  height: 25px;
+  background-image: url(../img/main-page/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -25px -101px;
+  margin-top: -12px;
+  text-indent: -9999px;
+}
+
+.realized-projects__next:hover {
+  background-position: -50px -101px;
 }
 
 .content__vendor {

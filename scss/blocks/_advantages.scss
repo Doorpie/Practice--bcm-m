@@ -28,7 +28,7 @@
 
     &__item:nth-child(1)::before{
         content:'';
-        background-image: url(/img/advantages/features1.png);
+        background-image: url(../img/advantages/features1.png);
         position: absolute;
         width: 87px;
         height: 73px;
@@ -38,7 +38,7 @@
 
     &__item:nth-child(2)::before{
         content:'';
-        background-image: url(/img/advantages/features2.png);
+        background-image: url(../img/advantages/features2.png);
         position: absolute;
         width: 86px;
         height: 87px;
@@ -48,7 +48,7 @@
 
     &__item:nth-child(3)::before{
         content:'';
-        background-image: url(/img/advantages/features3.png);
+        background-image: url(../img/advantages/features3.png);
         position: absolute;
         width: 73px;
         height: 73px;
@@ -58,7 +58,7 @@
 
     &__item:nth-child(4)::before{
         content:'';
-        background-image: url(/img/advantages/features4.png);
+        background-image: url(../img/advantages/features4.png);
         position: absolute;
         width: 75px;
         height: 96px;

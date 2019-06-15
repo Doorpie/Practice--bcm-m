@@ -27,15 +27,19 @@
         border-radius: 50%;
     }
 
+    &__item:hover + &__links{
+        color: $b_blue;
+    }
+
     &__links{
         display: block;
         margin: 5px;
         font: 18px/1.4em 'Roboto';
         text-decoration: none;
         color: #333;
-    }
 
-    &__links:hover{
-        color: $b_blue;
+        &:hover{
+            color: $b_blue;
+        }
     }
 }

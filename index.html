@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add Slick Slider CSS -->
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+
+    <!-- Add main css -->
     <link rel="stylesheet" href="./css/style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <title>bcm-m</title>
 </head>
@@ -242,15 +248,33 @@
             <!-- organization -->
             <section class="organization content__organization">
                 <ul class="organization__list">
-                    <li class="organization__item">
-                        <a href="#" class="organization__link">Офис</a>
+                    <li class="organization__item-office organization__item--active">
+                        <a href="#" class="organization__link-office">Офис</a>
                     </li>
-                    <li class="organization__item">
-                        <a href="#" class="organization__link">Склады</a>
+                    <li class="organization__item-warehouse">
+                        <a href="#" class="organization__link-warehouse">Склады</a>
                     </li>
                 </ul>
-                <div class="organization__slider">
-                    <img src="./img/organization/organization-photo1.jpg" alt="" class="organization__slider-img">
+                <div class="organization__office organization__office--active">
+                    <img src="./img/organization/organization-photo1.jpg" alt="photo" class="organization__slider-img">
+                    <img src="./img/organization/organization-photo2.jpg" alt="photo" class="organization__slider-img">
+                    <img src="./img/organization/organization-photo3.jpg" alt="photo" class="organization__slider-img">
+                </div>
+                <div class="organization__warehouse">
+                    <img src="./img/organization/organization-photo-warehouse1.jpg" alt="photo"
+                        class="organization__slider-img">
+                    <img src="./img/organization/organization-photo-warehouse2.jpg" alt="photo"
+                        class="organization__slider-img">
+                    <img src="./img/organization/organization-photo-warehouse3.jpg" alt="photo"
+                        class="organization__slider-img">
+                </div>
+                <div class="organization__warehouse-text">
+                    <ul class="organization__warehouse-list">
+                        <h3 class="organization__warehouse-name">Склады</h3>
+                        <li class="organization__warehouse-item">Более 20 производителей</li>
+                        <li class="organization__warehouse-item">Более 10 000 наименований металлопродукции</li>
+                        <li class="organization__warehouse-item">Услуги резки, гибки и обработки металла</li>
+                    </ul>
                 </div>
             </section>
             <!-- /organization -->
@@ -258,9 +282,16 @@
             <section class="realized-projects content__realized-projects">
                 <div class="realized-projects__title">Выполненные проекты</div>
                 <div class="realized-projects__slider">
-                    <div class="realized-projects__subtitle">Череповецкая ГРЭС</div>
-                    <img src="./img/realized-projects/realized-projects-img-1.png" alt=""
-                        class="realized-projects__slider-img">
+                    <div class="realized-projects__slider-item">
+                        <div class="realized-projects__subtitle">Вышки МТС и Билайн</div>
+                        <img src="./img/realized-projects/realized-projects1.jpg" alt="photo"
+                            class="realized-projects__slider-img">
+                    </div>
+                    <div class="realized-projects__slider-item">
+                        <div class="realized-projects__subtitle">Череповецкая ГРЭС</div>
+                        <img src="./img/realized-projects/realized-projects2.jpg" alt="photo"
+                            class="realized-projects__slider-img">
+                    </div>
                 </div>
             </section>
             <!-- /realized-projects -->
@@ -344,12 +375,21 @@
                 <p class="time-work__hours">СБ, ВС: по согласованию</p>
                 <p class="time_work__social">Мы в социальных сетях:</p>
                 <a href="#" class="time_work__social-link">
-                <img src="./img//footer/VK_Blue_Logo.svg" alt="" class="time_work__social-vk"></a>
+                    <img src="./img//footer/VK_Blue_Logo.svg" alt="" class="time_work__social-vk"></a>
 
             </div>
         </div>
     </footer>
     <!-- /footer -->
+    <!-- Add jq -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <!-- Add libJS Slick Slider -->
+    <script src="./slick/slick.min.js"></script>
+
+    <!-- Add script -->
+    <script src="./js/script.js"></script>
+
 </body>
 
 </html>

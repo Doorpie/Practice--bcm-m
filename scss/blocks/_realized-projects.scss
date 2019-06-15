@@ -2,40 +2,79 @@
     margin: 0 0 23px -18px;
     transform: scale(0.9);
     position: relative;
+}
+.realized-projects{
 
-    .realized-projects{
+    &__title{
+        font: 32px/1em 'Roboto';
+        color: #333;
+        margin-bottom: 20px;
+    }
 
-        &__title{
-            font: 32px/1em 'Roboto';
-            color: #333;
-            margin-bottom: 20px;
-        }
+    &__slider{
+        width: 955px;
+    }
 
-        &__subtitle{
+    &__slider-item{
+        position: relative;
+        height: 390px;
+
+        &::before {
+            content: '';
             position: absolute;
-            font: 24px/1em 'Roboto';
-            color: #333;
-            top: 20px;
-            left: 60px;
+            top: 0;
+            left: -6px;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(to right, #fff 40%, rgba(255,255,255,0));
         }
+    }
 
-        &__slider{
-            position: relative;
-            width: 955px;
+    &__subtitle{
+        position: absolute;
+        font: 24px/1em 'Roboto';
+        top: 20px;
+        left: 60px;
+        z-index: 1;
+    }
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background: linear-gradient(to right, #fff 40%, rgba(255,255,255,0));
-            }
+    &__slider-img{
+        float: right;
+    }
+
+    &__prev{
+        cursor: pointer;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 15px;
+        width: 15px;
+        height: 25px;
+        background: url(../img/main-page/sprite.png) no-repeat -75px -101px;
+        margin-top: -12px;
+        text-indent: -9999px;
+
+        &:hover{
+            background-position: 0 -101px;
         }
+    }
 
-        &__slider-img{
-            padding-left: 40%;
+    &__next{
+        cursor: pointer;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        right: 15px;
+        width: 15px;
+        height: 25px;
+        background-image: url(../img/main-page/sprite.png);
+        background-repeat: no-repeat;
+        background-position: -25px -101px;
+        margin-top: -12px;
+        text-indent: -9999px;
+
+        &:hover{
+            background-position: -50px -101px;
         }
     }
 }
