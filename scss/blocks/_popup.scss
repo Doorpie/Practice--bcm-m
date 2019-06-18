@@ -1,0 +1,134 @@
+.popup{
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+
+    &__box{
+        width: 360px;
+        height: 520px;
+        background: #fff;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    &__button{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        background: #0069a6;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 15px;
+            height: 15px;
+            margin-top: -7px;
+            margin-left: -7px;
+            background-image: url(../img/main-page/sprite.png);
+            background-position: -135px -69px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__top{
+        font: 300 20px/1.1em sans-serif;
+        padding: 20px;
+        background: #E8E7EC;
+    }
+
+    &__bottom{
+        font: 400 12px/1.3em sans-serif;
+        color: #333333;
+        padding: 10px 20px;
+        text-align-last: center;
+    }
+
+    &__link{
+        color: $b_blue;
+    }
+
+    &__link:hover{
+        text-decoration: none;
+    }
+}
+
+.popup-middle{
+
+    &__title{
+        font: 500 17px/1.3em 'Roboto';
+        padding: 10px 20.5px;
+        text-align: center;
+    }
+
+    &__name{
+        display: block;
+        font: 300 14px/1em sans-serif;
+        padding: 10px 0 0 20px;
+        margin: 0;
+    }
+
+    &__field{
+        box-sizing: border-box;
+        width: 320px;
+        height: 40px;
+        padding: 8px 15px 9px;
+        margin: 5px 20px 4px;
+        border: 2px solid #f2f2f2;
+        font-size: 16px;
+        color: #666;
+    }
+
+    &__field--comment{
+        height: 42px;
+        margin-bottom: 8px;
+        padding: 50px;
+        overflow: hidden;
+    }
+        
+    &__loading-link{
+        color: $b-blue;
+        border-bottom: 1px solid $b-blue;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+     &__loading-file{
+         display: none;
+     }
+
+     &__button{
+        display: block;
+        width: 150px;
+        margin: 20px auto 0 auto;   
+        padding: 10px;
+        font: 16px/1em 'Roboto';
+        letter-spacing: -0.2px;
+        background: $b-blue;
+        color:#fff;
+        border: none;
+     }
+
+     &__button:hover{
+        background: $b-d_blue;
+        cursor: pointer;
+    }
+        
+    &__sub-text{
+        font: 11.2px/1.2em 'Roboto';
+        letter-spacing: -0.2px;
+        color: #333;
+        margin: 10px 20px;
+    }	
+}

@@ -23,6 +23,18 @@
             <div class="top header-top__wrap">
                 <div class="top-location top__location">
                     <a href="#" class="top-location__link">Выбрать город</a>
+                    <ul class="top-location__list">
+                        <li class="top-location__item"><a href="#1"
+                                class="top-location__city top-location__city--main">Новосибирск</a></li>
+                        <li class="top-location__item"><a href="#2"
+                                class="top-location__city top-location__city--main">Екатеринбург</a></li>
+                        <li class="top-location__item"><a href="#3"
+                                class="top-location__city top-location__city--main">Москва</a></li>
+                        <li class="top-location__item"><a href="#4" class="top-location__city">Владивосток</a></li>
+                        <li class="top-location__item"><a href="#5" class="top-location__city">Абакан</a></li>
+                        <li class="top-location__item"><a href="#6" class="top-location__city">Астрахань</a></li>
+                        <li class="top-location__item"><a href="#7" class="top-location__city">Барнаул</a></li>
+                    </ul>
                 </div>
                 <nav class="top-nav top__nav">
                     <ul class="top-nav__list">
@@ -36,10 +48,13 @@
                         <li class="top-nav__item"><a href="#" class="top-nav__link">Калькулятор металла</a></li>
                     </ul>
                 </nav>
-                <div class="top-order top_order">
+                <div class="top-order top__order">
                     <span class="top-order_link">Отправьте нам заявку</span>
                 </div>
             </div>
+        </div>
+        <div class="header-phone header__phone">
+            <a href="tel:83832784559" class="header-phone__link">8 (383) 278-45-59</a>
         </div>
         <div class="header-middle">
             <div class="middle header-middle__wrap">
@@ -102,6 +117,15 @@
                 <p class="manager__information">zakaz@bcm.com</p>
             </div>
         </aside>
+        <div class="manager aside__manager--hide">
+            <div class="manager__photo">
+                <img src="./img/aside/aside_photo.png" alt="manager" class="manager__img">
+            </div>
+            <p class="manager__name">Александра Насонова</p>
+            <p class="manager__information">Региональный менеджер</p>
+            <p class="manager__information">8 (8560) 357-34-56</p>
+            <p class="manager__information">zakaz@bcm.com</p>
+        </div>
         <!-- /aside -->
         <!-- content -->
         <!--branding -->
@@ -375,12 +399,34 @@
                 <p class="time-work__hours">СБ, ВС: по согласованию</p>
                 <p class="time_work__social">Мы в социальных сетях:</p>
                 <a href="#" class="time_work__social-link">
-                    <img src="./img//footer/VK_Blue_Logo.svg" alt="" class="time_work__social-vk"></a>
-
+                    <img src="./img//footer/VK_Blue_Logo.svg" alt="" class="time_work__social-vk">
+                </a>
             </div>
         </div>
     </footer>
     <!-- /footer -->
+    <div class="popup">
+        <div class="popup__box">
+            <div class="popup__button"></div>
+            <div class="popup__top">Оставьте свои данные и мы позвоним вам и рассчитаем цену товара</div>
+            <div class="popup-middle popup__middle">
+                <form action="">
+                    <label for="" class="popup-middle__name">Телефон</label>
+                    <input type="text" class="popup-middle__field">
+                    <label for="" class="popup-middle__name">Email</label>
+                    <input type="text" class="popup-middle__field">
+                    <label for="" class="popup-middle__name">Комментарий</label>
+                    <textarea name="" class="popup-middle__field popup-middle__field--comment"></textarea>
+                    <label for="popup-middle__loading" class="popup-middle__loading-link">Загрузка файла</label>
+                    <input type="file" id="popup-middle__loading" class="popup-middle__loading-file">
+                    <br>
+                    <input type="submit" value="Отправить запрос" class="popup-middle__button">
+                </form>
+            </div>
+            <div class="popup__bottom">Нажимая кнопку «Отправить» я подтвержаю, что <br> принимаю условия <a href="#"
+                    class="popup__link">политики конфиденциальности</a></div>
+        </div>
+    </div>
     <!-- Add jq -->
     <script src="./js/jquery-3.4.1.min.js"></script>
 
